@@ -45,6 +45,7 @@ import com.hp.hpl.jena.sparql.core.Quad;
  * @since 1.0
  */
 public class RdfBulkUpdateRequestHandler extends UpdateRequestHandler {
+	public static Logger log = LoggerFactory.getLogger(RdfBulkUpdateRequestHandler.class);
 	/**
 	 * Loads an RDF {@link ContentStream} into Solr.
 	 * 

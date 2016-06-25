@@ -46,4 +46,21 @@ public class SparqlQuery extends Query {
 	public String toString(final String field) {
 		return query.toString();
 	}
+
+	@Override
+	public int hashCode() {
+		float boost = 1.0f;
+		return Float.floatToIntBits(boost) ^ getClass().hashCode();
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		SparqlQuery other = (SparqlQuery) obj;
+		return query.equals(other.query);
+	}
+
 }

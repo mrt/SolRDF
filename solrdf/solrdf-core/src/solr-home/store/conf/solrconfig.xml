@@ -8,7 +8,7 @@
 	only on master, etc etc.   
  -->
 <config>
-	<luceneMatchVersion>5.2.1</luceneMatchVersion>
+	<luceneMatchVersion>6.1.0</luceneMatchVersion>
 	<dataDir>${solr.data.dir}/${solr.core.name}/data</dataDir>
 	<directoryFactory name="DirectoryFactory" class="${solr.directoryFactory:solr.NRTCachingDirectoryFactory}" />
 	<codecFactory class="solr.SchemaCodecFactory" />
